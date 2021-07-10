@@ -1,0 +1,458 @@
+.footer {
+  display: flex;
+  text-align: center;
+  padding: 60px 0;
+  background-color: $dark-gray-color;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .footer {
+    padding: 60px 0;
+    background-color: $dark-gray-color;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__position {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    display: flex;
+    margin-right: 93px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer__box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__box {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__adress {
+  min-width: 232px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__adress {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 70px;
+    margin-bottom: 0;
+
+    min-width: 231px;
+  }
+}
+
+.footer__logotype {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-family: $accent-font;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: $white-color;
+
+  @media screen and (min-width: 1200px) {
+    .footer__logotype {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
+}
+
+.footer__label {
+  color: $blue-color;
+}
+
+.footer__street {
+  margin-bottom: 9px;
+
+  font-family: $main-font;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $white-color;
+}
+
+.footer__social_networks {
+  display: inline-flex;
+  flex-direction: column;
+
+  padding: 0;
+
+  min-width: 206px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 480px) and(max-width:767px) {
+    margin-top: 60px;
+  }
+}
+
+.footer__welcome_title {
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.footer__contacts {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $contacts-color;
+  li:first-child {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__social_networks_list {
+  display: flex;
+  justify-content: space-around;
+  &.footer__social_networks_list--top {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  fill: $item-color;
+  background-color: $icons-human-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $blue-color;
+    fill: $white-color;
+  }
+  &--white {
+    fill: $white-color;
+  }
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__linkedin {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+  }
+}
+
+.footer__text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.footer__input {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+
+  width: 450px;
+  height: 50px;
+
+  border: 1px solid $mail-border-color;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px $button-shadow);
+  border-radius: 4px;
+  background-color: $dark-gray-color;
+  color: $white-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.footer__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 875;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background: $blue-color;
+  border-radius: 4px;
+  border-color: transparent;
+  &::after {
+    content: "";
+
+    padding: 13px 28px 13px 10px;
+
+    width: 24px;
+    height: 24px;
+    background: $blue-color url(../images/icon_send.svg) no-repeat center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+
+/*.footer {
+  padding: 60px 0;
+  background-color: $dark-gray-color;
+}
+
+.footer__position {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__adress {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 70px;
+
+  min-width: 231px;
+}
+
+.footer__logotype {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-family: $accent-font;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $white-color;
+}
+
+.footer__label {
+  color: $blue-color;
+}
+
+.footer__street {
+  margin-bottom: 9px;
+
+  font-family: $main-font;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $white-color;
+}
+
+.footer__social_networks {
+  display: inline-flex;
+  flex-direction: column;
+
+  padding: 0;
+
+  min-width: 206px;
+}
+
+.footer__welcome_title {
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.footer__contacts {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $contacts-color;
+  li:first-child {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__social_networks_list {
+  display: flex;
+  justify-content: space-around;
+  &.footer__social_networks_list--top {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  fill: $item-color;
+  background-color: $icons-human-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $blue-color;
+    fill: $white-color;
+  }
+  &--white {
+    fill: $white-color;
+  }
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__linkedin {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__subscription {
+  margin-left: 93px;
+}
+
+.footer__text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.footer__form {
+  display: flex;
+  margin-top: 20px;
+
+  width: 570px;
+}
+
+.footer__input {
+  margin-right: 12px;
+
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid $mail-border-color;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px $button-shadow);
+  border-radius: 4px;
+  background-color: $dark-gray-color;
+  color: $white-color;
+}
+
+.footer__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 875;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background: $blue-color;
+  border-radius: 4px;
+  border-color: transparent;
+  &::after {
+    content: "";
+
+    padding: 13px 28px 13px 10px;
+
+    width: 24px;
+    height: 24px;
+    background: $blue-color url(../images/icon_send.svg) no-repeat center;
+  }
+}
+*/

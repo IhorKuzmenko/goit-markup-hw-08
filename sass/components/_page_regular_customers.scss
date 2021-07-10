@@ -1,0 +1,138 @@
+.customers {
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
+.customers__title {
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $gray-color;
+
+  @media screen and(min-width:1200px) {
+    .customers__title {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      color: $gray-color;
+    }
+  }
+}
+
+@media screen and(max-width:1199px) {
+  .customers__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .customers__list {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px;
+  }
+}
+
+.customers__item {
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+}
+
+.customers__link {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 92px;
+
+  border: 1px solid $item-color;
+  border-radius: 4px;
+  fill: $item-color;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $blue-color;
+    border: 1px solid $blue-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.customers__icon {
+  width: 106px;
+  height: 60px;
+}
+
+/*.customers {
+  padding: 94px 0;
+}
+
+.customers__title {
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: $gray-color;
+}
+
+.customers__list {
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.customers__link {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid $item-color;
+  border-radius: 4px;
+  fill: $item-color;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $blue-color;
+    border: 1px solid $blue-color;
+  }
+}
+
+.customers__icon {
+  width: 106px;
+  height: 60px;
+}
+*/
